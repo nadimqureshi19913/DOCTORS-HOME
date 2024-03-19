@@ -1,0 +1,1109 @@
+
+
+:root
+{
+    ---primaryColor : #276a7b;
+    ---secondaryColor: #007569;
+    ---whiteColor :#fff;
+    ---blackColor :#000;
+    ---textColor:rgb(123, 119, 119);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: all .5s ease;
+    user-select: none;
+}
+
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background:var(---whiteColor);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header
+{
+    width: 100%;
+    height: max-content;
+   background: var(---secondaryColor);
+   position: fixed;
+   top:0;
+   left: 0;
+   padding: .8rem 2rem;
+   z-index: 1000;
+}
+
+.navbar
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    color: var(---whiteColor);
+    flex-wrap: wrap;
+
+    
+.navlogo
+{
+    font-size: 3rem;
+}
+}
+
+
+.togglebtn
+{
+/* background: red; */
+display: none;
+}
+
+.togglebtn i
+{
+    font-size: 35px;
+}
+
+/* ---------navlogo------------- */
+.navlogo
+{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navlogo span
+{
+    margin-left: 3px;
+}
+
+
+
+
+
+/* -------inputSection---------------------- */
+.navMenu
+{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:30px;
+flex-wrap: wrap;
+position: relative;
+}
+
+
+/*---------------- .input ----------------------*/
+.navMenu .input
+{
+    width: 350px;
+    padding: .8rem .3rem;
+    border-radius: 10px;
+    background: var(---whiteColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ 
+.navMenu .input i
+{
+    color: var(---textColor);
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navMenu .input input
+{
+    background: transparent;
+    outline: none;
+    width: 80%;
+    border: none;
+    font-size: 18px;
+}
+
+/* ---------li and a ---------------------- */
+.navMenu li
+{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.navMenu li a
+{
+    text-decoration: none;
+    font-size: 18px;
+     font-weight: 600;
+     color: var(---whiteColor);
+    padding-bottom: 10px;
+}
+
+.navMenu li a:hover
+{
+border-bottom: 3px solid var(---whiteColor);
+
+}
+
+
+.navMenu .btn button
+{
+    padding: .5rem 2rem;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: rgb(22, 110, 94);;
+    cursor: pointer;
+}
+
+
+.navMenu .btn button:hover
+{
+    background: rgb(53, 199, 53);
+    color: #fff;
+}
+
+
+
+  /* ----------MAIN DIV-------------- */
+  .main
+  {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* background: blue; */
+    padding: 3rem 0;
+    height: max-content;
+    color: var(---blackColor);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.drImage
+{
+    width:max-content;
+    height: max-content;
+    text-align: center;
+
+    padding: 3rem 2rem;
+    justify-content:center;
+    align-items: center;
+    background:var(---secondaryColor);
+    animation: border-transform 2s infinite ease-in-out;
+    box-shadow: 0 10px 20px var(---secondaryColor);
+   }
+
+
+
+
+@keyframes border-transform {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    50% {
+      border-radius: 68% 32% 30% 70% / 57% 38% 62% 43%;
+    }
+    100% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+  }
+
+.drImage .img
+{
+    width: max-content;
+    height: 100%;
+    border-radius: 50%;
+    background: var(---whiteColor);
+    overflow: hidden;
+    margin: auto;
+}
+.drImage .img img
+{
+    object-fit: cover;
+} 
+
+.drImage h2
+{
+    color: var(---whiteColor);
+    font-size: 30px;
+font-weight: 500;
+margin-top: 20px;
+}
+
+/* ------------------------------------ */
+
+.AboutDr
+{
+    height: max-content;
+    width:max-content;
+    /* background: red; */
+    padding: 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: justify;
+    gap: 5px;
+    /* margin-left: -300px; */
+    color: var(---blackColor);
+}
+
+/* .AboutDr .content
+{
+    margin-left: -300px;
+} */
+.AboutDr .content .drname
+{
+    color: var(---secondaryColor);
+    font-size: 2rem;
+}
+
+
+.AboutDr .content h3
+{
+    color: var(---textColor);
+    font-size: 1.1rem;
+}
+
+.AboutDr .content h2
+{
+ font-size: 1.3rem;
+ color: var(---blackColor);
+}
+
+.AboutDr .content p
+{
+ font-size: 1.2rem;
+ color: var(---textColor);
+}
+
+.AboutDr .content h1
+{
+  color: var(---blackColor);
+  font-size: 1.2rem;
+}
+
+.AboutDr .content h1 span
+{
+color: var(---textColor);
+}
+
+.percent
+{
+display: flex;
+justify-content: center;
+font-size: 1.2rem;
+align-items: center;
+color: var(---textColor);
+}
+
+.percent .thumbicon
+{
+    background: rgb(61, 222, 61);
+    padding: 5px 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: var(---whiteColor);
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+
+.AppoinmentDate
+{
+    
+    width:100% ;
+}
+
+.AppoinmentDate .bottomborder
+{
+position: absolute;
+width: 95%;
+height: 3px;
+/* padding: 2px 0; */
+background: rgb(208, 203, 203);
+/* border: 1px solid grey; */
+border-radius: 10px;
+bottom: 0;
+margin: auto;
+
+}
+
+.AppoinmentDate .bottomborder  .slideborder
+{
+    width: 30%;
+    background:var(---secondaryColor);
+    height: 3px;
+    border-radius: 10px;
+    padding: 2px 0;
+}
+
+.AppoinmentDate .dateSlide
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 15px;
+    gap: 10px;
+}
+
+.AppoinmentDate .dateSlide .dates
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    font-size: 14px;
+    width: 100%;
+    color: var(---blackColor);
+}
+
+
+.dateSlide .arrows
+{
+
+    /* border: 1px solid var(---secondaryColor); ; */
+     /* background:var(---secondaryColor); */
+    padding: .7rem;
+    /* border-radius: 50%; */
+    /* color: var(---whiteColor); */
+    color: var(---primaryColor);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* .dateSlide .arrows i:hover  
+{
+transform: scale(1.4);
+} */
+
+.AppoinmentDate .dateSlide .dates h1
+{
+    font-size: 1.5rem;
+}
+
+.AppoinmentDate .dateSlide .dates p
+{
+    color: var(---blackColor);
+    font-weight: 600;
+}
+
+.AppoinmentDate .dateSlide .dates>div
+{
+    font-size:14px;
+}
+
+
+.Timeschedule
+{
+    width: 100%;
+    /* background:red; */
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.Timeschedule .Timing
+{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(195, 187, 187);
+    flex-wrap: wrap;
+}
+
+.shifts
+{
+    width: 100px;
+}
+
+.Timeschedule .Timing  .time
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+    color: var(---secondaryColor);
+    font-size: 12px;
+    flex-wrap: wrap;
+    color: var(---blackColor);
+}
+
+.Timeschedule .Timing h1
+{
+    font-size: 1.3rem;
+}
+
+.Timeschedule .Timing h2
+{
+    padding: .3rem .4rem;
+    border: 2px solid var(---secondaryColor);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.Timeschedule .Timing h2:hover
+{
+    background: var(---secondaryColor);
+    color: white;
+}
+
+.scheduleAvail
+{
+    width: 100%;
+    /* background: red; */
+    padding: .3rem;
+}
+
+
+.scheduleAvail h1
+{
+    color: rgb(25, 210, 25);
+    margin-left: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.scheduleAvail button
+{
+    padding: .7rem 3rem;
+    background: var(---secondaryColor);
+    color: var(---whiteColor);
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+
+/* -----------------home-------------------- */
+.home
+{
+    width: 100%;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+}
+
+.cards
+{
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 20px;
+padding: .5rem 0rem;
+border-radius: 10px;
+color: var(---whiteColor);
+width: 80%;
+margin: auto;
+/* flex-wrap: wrap; */
+/* background: blue; */
+}
+.cards .leftarr
+{
+    padding: .5rem 0rem;
+    /* border: 2px solid var(---secondaryColor); */
+    font-size: 40px;
+    font-weight: 500;
+    color: var(---secondaryColor);
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+
+.cards .rightarr
+{
+    padding: .5rem 0rem;
+    /* border: 2px solid var(---secondaryColor); */
+    font-size: 40px;
+    font-weight: 500;
+    color: var(---secondaryColor);
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+
+.card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px;
+    padding: .5rem .3rem;
+    border-radius: 10px;
+    background: #DAF8FF;
+    width: max-content;
+    /* height:max-content; */
+    height: 300px;
+   
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px var(---secondaryColor); */
+    color: var(---blackColor);
+}
+.card .image img
+{
+    width: 180px;
+}
+
+.drcontent .name
+{
+    width: 100%;
+    display: flex;
+    /* background: red; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0rem 0rem; */
+    
+}
+
+.drcontent .name h1
+{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.drcontent .name i
+{
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.drcontent .name i:hover
+{
+color: red;
+}
+
+.drcontent p
+{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(---textColor);
+    font-weight: 400;
+}
+
+.drcontent .bookbtn
+{
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem  0;
+    text-align: center;
+}
+
+.drcontent .bookbtn button
+{
+    padding: .6rem 1.3rem;
+    border-radius: 15px;
+    background: var(---primaryColor) ;
+    color:var(---whiteColor);
+    font-size: 15px;
+    border: none;
+}
+
+.drcontent .bookbtn i
+{
+    color: gold;
+    font-size: 2rem;
+}
+
+/* --------------------------------------- */
+
+.footer
+{
+    width: 100%;
+    background:var(---secondaryColor) ;
+    padding-top: 1rem;
+    color: var(---whiteColor);
+}
+
+.footer .contactVisit
+{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 0rem;
+}
+
+.footer .contactVisit .footerlogo
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.footer .contactVisit .footerlogo span
+{
+    margin-left: 10px;
+}
+
+.footer .contactVisit .pera
+{
+    width: 400px;
+    line-height:2rem;
+}
+
+.footer .copyright
+{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: var(---primaryColor);
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.footer .copyright h1
+{
+    font-size: 15px;
+}
+
+.footer .copyright .terms
+{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.footer .copyright .terms h2
+{
+    font-size: 18px;
+}
+
+.SocialIcons i
+{
+    color: var(---whiteColor);
+    font-size: 1.3rem;
+}
+
+.ContactDetails
+{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.number i
+{
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    background: rgb(43, 182, 43);
+}
+
+.gmail i
+{
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    background: rgb(43, 182, 43);
+}
+
+
+.copyright h1
+{
+    display: flex;
+    align-items: center;
+}
+
+.copyright h1 i
+{
+    font-size: 1.3rem;
+}
+
+.navMenu .active
+{
+    top: 100px;
+}
+
+
+.removeBtn
+{
+    padding:.5rem .7rem;
+    color: white;
+    background:var(---secondaryColor);
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+@media screen and (max-width:1300px) {
+    
+.navbar{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navMenu
+{
+    position:absolute;
+    top:-900%;
+    width: 70%;
+    padding: .9rem .7rem;
+    /* background: rgb(22, 110, 94); */
+    justify-content: center;
+    flex-direction: column;
+    border:2px solid var(---secondaryColor);
+    border-radius: 10px;
+    background:url(image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 15%;
+}
+
+
+.navMenu li
+{
+    background:var(---secondaryColor);
+    padding: 0.6rem 0;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.navMenu .input
+{
+    width: 70%;
+}
+
+.navMenu li:hover
+{
+    background:var(---blackColor);
+    color: var(---whiteColor);
+}
+
+.navMenu li a:hover
+{
+    border-bottom: none;
+}
+
+.togglebtn
+{
+    display: block;
+}
+
+.navMenu .btn
+{
+    width: 90%;
+    margin: auto;
+}
+.navMenu .btn button
+{
+    width: 100%;
+}
+
+/* --------------------------- */
+
+.main
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.drImage
+{
+    width: 80%;
+    height: 400px;
+    padding: 3rem 2rem;  
+    padding-bottom: 7rem;
+    margin: 100px auto;
+
+}
+
+
+.drImage .img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.drImage .img img
+{
+    object-fit: cover;
+    background-position: center;
+}
+
+.drImage h2{
+    font-size: 25px
+}
+
+/* ---------------------------------------------------- */
+.AboutDr
+{
+    width: 100%;
+    padding: 1rem 1rem;
+    margin-left:0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: justify;
+    gap:20px
+}
+
+.content .drname
+{
+font-size: 3rem;
+}
+
+.AboutDr .content
+{
+    gap: 20px;
+}
+.AboutDr .content .drname
+{
+    font-size: 1.5rem;
+}
+
+.AboutDr .content .drname
+{
+    color: rgb(22, 110, 94);
+    font-size: 1.5rem;
+}
+
+.AboutDr .content h1
+{
+    font-size: 1rem;
+}
+
+.AboutDr .content h1 span
+{
+    font-size: .9rem;
+}
+
+.AboutDr .content h3
+{
+    color: var(---textColor);
+    font-size: 1.1rem;
+}
+
+.AboutDr .content h2
+{
+ font-size: 1.1rem;
+ color: var(---textColor);
+}
+
+.AboutDr .content p
+{
+ font-size: 1rem;
+ color: var(---textColor);
+}
+
+.percent
+{
+    font-size: .9rem;
+    margin-top: -10px;
+}
+
+.percent .thumbicon
+{
+align-items: start;
+
+}
+
+.AppoinmentDate
+{
+    width: 100%;
+}
+
+.AppoinmentDate .dateSlide
+{
+    width: 100%;
+    gap: 20px;
+}
+.AppoinmentDate .dateSlide .dates
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    width: 100%; 
+}
+
+.AppoinmentDate .dateSlide .dates h1
+{
+    font-size: 1rem;
+}
+
+.AppoinmentDate .dateSlide .dates>div
+{
+    font-size:12px;
+}
+.AppoinmentDate .dateSlide .dates  .Appday
+{
+display: flex;
+gap: 5px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+
+.Timeschedule
+{
+width: 100%;
+}
+
+.Timeschedule .Timing
+{
+    gap: 10px;
+}
+
+.scheduleAvail
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.scheduleAvail h1
+{
+    margin-left: 0;
+}
+
+/* ---------------------- */
+.home
+{
+width: 100%;
+justify-content: center;
+flex-direction: column;
+padding: 0rem;
+}
+
+.cards
+{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+}
+
+.cards .card
+{
+width: 70%;
+justify-content: center;
+height: max-content;
+flex-direction: column;
+align-items: center;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.card .name 
+{
+    justify-content: center;
+    gap: 20px;
+   
+}
+.card .name h1
+{
+    font-size: 1.6rem;
+}
+
+.card p
+{
+    font-size: 1.3rem;
+}
+
+
+.cards .card img
+{
+    width: 70%;
+}
+
+
+   /* ----------------------Footer start--------------------------- */
+   .footer
+   {
+    width: 100%;
+   }
+
+   .footer .contactVisit
+   {
+    flex-direction: column;
+    width: 100%;
+   }
+
+ 
+.footer .contactVisit .footerlogo
+{
+    font-size: 2rem;
+}
+
+.footer .contactVisit .pera
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer .copyright .terms
+{
+    width: 80%;
+}
+
+.SocialIcons
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright
+{
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+.footer .copyright .terms h2
+{
+    font-size: .8rem;
+}
+
+.removeBtn
+{
+   display: block;
+}
+
+
+}
+
+
+/* @media screen and (min-width:1300px) */
+
+
+
