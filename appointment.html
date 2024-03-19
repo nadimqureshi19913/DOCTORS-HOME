@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="./appointment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+<!-- ------------------------------------ HEADER START ----------------------------------------------->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navlogo">
+               <a href="http://127.0.0.1:5501/index.html"> Doctor<span class="plus">+</span> </a>
+            </div>
+            
+            <!-- -----toggle Btn -->
+            <div class="togglebtn" onclick="toggleMenu">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+
+            <ul class="navMenu">
+              
+                <!-- ----Remove Btn -->
+                <div class="removeBtn" onclick="removeBtn">
+                    X
+                </div>
+
+                <div class="input">
+                    <i class='bx bx-search-alt-2' ></i>
+                    <input type="text" placeholder="Search Doctor">
+                </div>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Service</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Register</a>
+                </li>
+                <li>
+                    <a href="#">Doctors</a>
+                </li>
+                
+
+                <div class="btn">
+                    <button>Login</button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+<!-- ------------------------------------ HEADER END ----------------------------------------------->
+
+<!-- ------------------------------------ MAIN START ----------------------------------------------->
+
+<div class="main">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <h1 class="title">Book Your Appointment</h1>
+    <p>Great doctor if you nedd your family memeber to get effective immediate <br>
+        assistance, emergency treatment or a simple consultation
+    </p>
+    <div class="AppointmentCard">
+    <div class="AppTitle">Book Your Appointment</div>
+    <form class="form" action="#" class="AppForm">
+        <div class="namebox">
+        <label for="#">Patient Name</label>
+        <input type="text" placeholder="Patient Name : " required>
+    </div>
+        <div class="details">
+            <div class="inputbox">
+             <div class="department" for="#"> Departmenet</div>
+             <select>Select Departmenet
+                <option value="1">Dentist</option>
+                <option value="2">Neoro</option>
+                <option value="3">Consultant</option>
+                <option value="4">Sergeon</option>
+                <option value="5">Physicians</option>
+             </select>
+            </div>
+
+            <div class="inputbox doctors">
+                <div class="doctor" for="#"> Doctor</div>
+                <select>Select Doctor
+                   <option value="1">Dr John</option>
+                   <option value="2">Dr Nadeem</option>
+                   <option value="3">Dr Simran</option>
+                   <option value="4">Dr Ema Merin</option>
+                   <option value="5">Dr Stone</option>
+                </select>
+               </div>
+        </div>
+
+        <div class="personalInfo">
+            <div class="mailbox inputbox">
+                <label for="#">Your Email</label>
+                <input type="email" placeholder="Your Email " required>
+            </div>
+            <div class="numberbox inputbox">
+                <label for="#">Your Phone</label>
+                <input type="text" placeholder="Your Phone" maxlength="10"  required>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <h3 class="comments">Comments</h3>
+            <input name=""  cols="30" rows="10" placeholder="Your Message:"></input>
+        </div>
+    </form>
+    <div class="btn">
+        <a href="http://127.0.0.1:5503/payment.html" target="_blank"><button>Book Appointment</button></a>
+    </div>
+    </div>
+    
+</div>
+
+<!-- ------------------------------------ MAIN END ------------------------------------------------->
+
+<!-- ------------------------------------ FOOTER START ----------------------------------------------->
+    <footer class="footer">
+        <div class="contactVisit">
+            <div class="footerlogo">
+                Doctor<span>+</span>
+            </div>
+            <div class="pera">
+                Thank you for visiting our websites, and I look forward to being a part of your wellness journey. Let's thrive together!
+            </div>
+            <div class="ContactDetails">
+               <div class="number">
+                <img src="./Doctor Appointment Module (2)/Elements/Symbol.png" alt="">  <span>+91-1234567890</span>
+               </div>
+               <div class="gmail">
+                <img src="./Doctor Appointment Module (2)/Elements/Symbol-1.png" alt=""> <span>contact@gmail.com</span> 
+               </div>
+               <div class="SocialIcons">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-youtube'></i>
+               </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+        <h1><i class='bx bx-copyright'></i>Copyright 2023. All Rightd Reserved</h1>
+        <div class="terms">
+            <h2>Privacy Policy</h2>
+            <h2>Terms Services</h2>
+            <h2>Legal Info</h2>
+        </div>
+        </div>
+        </footer>
+<!-- ------------------------------------ FOOTER END ----------------------------------------------->
+    <script src="./script.js"></script>
+</body>
+</html>

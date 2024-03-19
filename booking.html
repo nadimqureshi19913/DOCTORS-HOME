@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="./booking.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+<!-- ------------------------------------ HEADER START ----------------------------------------------->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navlogo">
+               <a href="http://127.0.0.1:5505/index.html"> Doctor<span class="plus">+</span> </a>
+            </div>
+            
+            <!-- -----toggle Btn -->
+            <div class="togglebtn" onclick="toggleMenu">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+
+            <ul class="navMenu">
+              
+                <!-- ----Remove Btn -->
+                <div class="removeBtn" onclick="removeBtn">
+                    X
+                </div>
+
+                <div class="input">
+                    <i class='bx bx-search-alt-2' ></i>
+                    <input type="text" placeholder="Search Doctor">
+                </div>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Service</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Register</a>
+                </li>
+
+                <li>
+                    <a href="#">Doctors</a>
+                </li>
+
+                <div class="btn">
+                    <button>Login</button>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+<!-- ------------------------------------ HEADER END ----------------------------------------------->
+
+<!-- ------------------------------------ MAIN START ----------------------------------------------->
+
+<div class="main">
+    <div class="bookingsections">
+        <ul class="sections">
+
+           <a href="#">
+            <li>Consult Online</li>
+           </a>
+
+           <a href="http://127.0.0.1:5502/appointment.html">
+            <li>Book Appointment</li>
+           </a>
+
+           <a href="#">
+            <li>Treatment</li>
+           </a>
+
+           <a href="#">
+            <li>Ask a Questions</li>
+           </a>
+
+           <a href="#">
+            <li>Plan MySurgery</li>
+           </a>
+
+           <a href="#">
+            <li>Favourite List</li>
+           </a>
+
+           <a href="#">
+            <li>Health Feed</li>
+           </a>
+
+        </ul>
+    </div>
+
+    <div class="Consultations">
+        <div class="searching">
+
+            <div class="inputbox">
+                <input type="text" placeholder="Search Doctor">
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Enter Locality">
+                <i class='bx bx-current-location' ></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="text" placeholder="Treatment Type">
+                <i class='bx bxs-droplet-half' ></i>
+            </div>
+
+            <div class="searchIcon">
+                <i class='bx bx-search Icon'></i>
+            </div>
+
+            <div class="filterbtn ">
+                <button>Filter</button>
+            </div>
+
+        </div>
+
+        <div class="DrAppointment">
+            <div class="appointDetails">
+            <div class="Drdetails">
+                <div class="drImage">
+                    <img class="img" src="./image-removebg-preview (8) 1.png" alt="">
+                    <span><i class='bx bxs-star' ></i> 4.5</span>
+                    <p>202 rating</p>
+                </div>
+
+                <div class="Aboutdr">
+                    <div class="drname">
+                        <h1>Dr. Wanitha Jhones</h1>
+                        <div class="btn">
+                            <button>Available Today</button>
+                        </div>
+                    </div>
+
+                    <div class="contentDr">
+                    <h3>Dentist</h3>
+                    <h3 class="exp">
+                        7 years experience overall
+                    </h3>
+                    <h2>Pare, Mumbai</h2>
+                    <h3>Smilessence Center for Advanced Dentistry + 1 more</h3>
+                    <h2><b>FREE</b><span>Rs500</span>Consultation fee at clinic</h2>
+                </div>
+                <div class="btns">
+                    <a href="">
+                    <button class="btn">Call Now</button>
+                    </a>
+
+                    <a href="http://127.0.0.1:5502/appointment.html">
+                    <button class="btn bookbtn">
+                        Book Appointment
+                    </button>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="AppSec">
+                <h1><i class='bx bxs-business'></i>Appointment</h1>
+                <div class="arrow">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+        </div>
+
+            <div class="bookingapp">
+               <h1>
+                Book Appointment for <br> Any Type <br> Consultation
+               </h1>
+               <h2>Get Callback from Best Doctors</h2>
+
+               <input type="text" placeholder="Patient Name">
+               <input type="number" placeholder="Mobile Number">
+               <input type="text" placeholder="City Name(optional)">
+
+               <a href="http://127.0.0.1:5502/appointment.html">
+               <button class="btn">
+                Book Appointment
+               </button>
+               </a>
+            </div>
+
+        </div>
+    
+
+        <div class="AppointmentSections">
+            <div class="Appsec">
+              <div class="doctorImage">
+                <div class="image">
+                    <img src="./image-removebg-preview (7) 1.png">
+                </div>
+                <h1>Dr. Stone Wilson</h1>
+              </div>
+
+              <div class="appointmentTime">
+                <div class="abtDr">
+                <h1>Dr. Stone Wilson</h1>
+                <h3>Dentist</h3>
+                <h3>16 years experience overall</h3>
+                <h2>Pare,Mumbai</h2>
+                <h3>Smilessence Center for Advanced Density + 1</h3>
+                <h3>more</h3>
+                <h2><b>Free</b><span>Rs500</span>Consultation fee at clinic </h2>
+                <h4><span class="percent">
+                    <i class='bx bxs-hand-right'></i> 99%</span> <span>93</span> Patient Histories </h4>
+            </div>
+
+            
+
+            <div class="timeSchedule">
+
+        <div class="leftArrow arrow">
+            <i class='bx bx-chevron-left' ></i>
+             </div>
+             <div class="days">
+                <div class="borderbtm">
+                    <div class="slide"></div>
+                </div>
+            <div 
+            class="appday">
+                <h1>Today</h1>
+                <p>11 Slots Available</p>
+            </div>
+            <div class="appday">
+                <h1>Tomorrow</h1>
+                <p>17 Slots Available</p>
+            </div>
+            <div class="appday">
+                <h1>Fri, 5 April</h1>
+                <p>18 Slots Available</p>
+            </div>
+             </div>
+          <div class="rightArrow arrow">
+            <i class='bx bx-chevron-right' ></i>
+          </div>
+
+
+            </div>
+
+             <div class="AppointmentTimePeriods">
+                <div class="mrng">
+               <div class="shift">Morning</div>
+             <div class="times">
+                <h1>10:00 AM</h1>
+                <h1>11:30 AM</h1>
+             </div>
+
+                </div>
+                <div class="afternoon">
+
+                    <div class="shift">Afternoon</div>
+                    <div class="times">
+                       <h1>12:30 PM</h1>
+                       <h1>01:30 PM</h1>
+                       <h1>03:00 PM</h1>
+                    </div>
+
+                </div>
+                <div class="evng">
+                    <div class="shift">Evening</div>
+                    <div class="times">
+                       <h1>04:40 PM</h1>
+                       <h1>06:00 PM</h1>
+                       <h1>07:30 PM</h1>
+                       <h1>08:00 PM</h1>
+                    </div>
+                </div>
+             </div>
+
+             <div class="btn">
+                <h1>Available Today</h1>
+                <a href="http://127.0.0.1:5502/appointment.html">
+                <button>Book Appointment</button>
+                </a>
+              </div>
+              </div>
+              
+            </div>
+            <div class="FRQ">
+              <h1>Ask a free questions</h1>
+              <h3>Get Free multiple opinions from Doctors</h3>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter a questions"></textarea>
+            <button type="submit">Submit</button>
+
+
+            </div>
+        </div>
+
+        <div class="SavedDoctors">
+            <div class="fvrdr">
+            <div class="savedDr">
+                <h1><i class='bx bx-calendar-plus' ></i>Saved Doctors</h1>
+                <i class='bx bx-chevron-right arrow' ></i>
+            </div>
+            <div class="DoctorCards">
+                <div class="DrCard">
+                    <img class="img" src="./image-removebg-preview (8) 1.png" alt="">
+                    <div class="about">
+                        <div class="name">
+                            <h1>Dr. Wanitha</h1>
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum inventore quaerat ea exercitationem voluptas eius maxime non, eveniet nihil?</p>
+                        <div class="ratingbtn">
+                            <a href="http://127.0.0.1:5502/appointment.html">
+                            <button>Book</button>
+                            </a>
+                            <h2><i class='bx bxs-star' ></i>5.0</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="DrCard">
+                    <img src="./image-removebg-preview (7) 2.png" alt="">
+                    <div class="about">
+                        <div class="name">
+                            <h1>Dr. Stone Wilson</h1>
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum inventore quaerat ea exercitationem voluptas eius maxime non, eveniet nihil?</p>
+                        <div class="ratingbtn">
+
+                            <a href="http://127.0.0.1:5502/appointment.html">
+                            <button>Book</button>
+                            </a>
+                            <h2><i class='bx bxs-star' ></i>5.0</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="PatientHealt">
+                <h1><i class='bx bx-calendar-plus' ></i>Patient Health History</h1>
+                <i class='bx bx-chevron-right arrow' ></i>
+            </div>
+            <div class="InformUpdates">
+                <h1><i class='bx bx-history'></i>Information Updates</h1>
+                <i class='bx bx-chevron-right arrow' ></i>
+            </div>
+        </div>
+        <div class="healthTips">
+            <h1>Top Health Tips</h1>
+            <h3>Acne - 7 Home Remedies for Treating it</h3>
+            <h3>All About Acne</h3>
+            <h3>Do You Know that Dandruff Causes  ACNE? </h3>
+            <h3>Acne Treatment With Alternative Medicine</h3>
+            <h3>6 Best Home Remedies To Get Rid of Acne</h3>
+            <h3>5 Hidden Causes of Acne, Revealed!</h3>
+        </div>
+        </div>
+
+
+        <div class="DoctorsList">
+            <div class="typeofDr">
+                <h1>All</h1>
+                <h1>Nurologist</h1>
+                <h1>Cardiologist</h1>
+                <h1>Dermatologist</h1>
+            </div>
+            <div class="DrList">
+                <div class="leftArrow arrow">
+                    <i class='bx bx-chevron-left' ></i>
+                </div>
+                <div class="Drs">
+                    <div class="card">
+                        <img class="img" src="./image-removebg-preview (13) 1.png" alt="">
+                        <div class="about">
+                            <div class="name">
+                                <h1>Dr. Grey Liosion</h1>
+                                <i class='bx bxs-heart'></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum inventore quaerat ea exercitationem voluptas eius maxime non, eveniet nihil?</p>
+                            <div class="ratingbtn">
+                                <a href="http://127.0.0.1:5502/appointment.html">
+                                <button>Book</button>
+                                </a>
+
+                                <h2><i class='bx bxs-star' ></i>5.0</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="img" src="./image-removebg-preview (12) 1.png" alt="">
+                        <div class="about">
+                            <div class="name">
+                                <h1>Dr. Anthony</h1>
+                                <i class='bx bxs-heart'></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum inventore quaerat ea exercitationem voluptas eius maxime non, eveniet nihil?</p>
+                            <div class="ratingbtn">
+                                <a href="http://127.0.0.1:5502/appointment.html">
+                                <button>Book</button>
+                                </a>
+                                <h2><i class='bx bxs-star' ></i>5.0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightArrow arrow">
+                    <i class='bx bx-chevron-right' ></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<!-- ------------------------------------ MAIN END ------------------------------------------------->
+
+<!-- ------------------------------------ FOOTER START ----------------------------------------------->
+    <footer class="footer">
+        <div class="contactVisit">
+            <div class="footerlogo">
+                Doctor<span>+</span>
+            </div>
+            <div class="pera">
+                Thank you for visiting our websites, and I look forward to being a part of your wellness journey. Let's thrive together!
+            </div>
+            <div class="ContactDetails">
+               <div class="number">
+                <img src="./Symbol.png" alt="">  <span>+91-1234567890</span>
+               </div>
+               <div class="gmail">
+                <img src="./Symbol-1.png" alt=""> <span>contact@gmail.com</span> 
+               </div>
+               <div class="SocialIcons">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-youtube'></i>
+               </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+        <h1><i class='bx bx-copyright'></i>Copyright 2023. All Rightd Reserved</h1>
+        <div class="terms">
+            <h2>Privacy Policy</h2>
+            <h2>Terms Services</h2>
+            <h2>Legal Info</h2>
+        </div>
+        </div>
+        </footer>
+<!-- ------------------------------------ FOOTER END ----------------------------------------------->
+    <script src="./script.js"></script>
+</body>
+</html>

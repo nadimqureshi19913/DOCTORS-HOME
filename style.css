@@ -183,17 +183,17 @@ border-bottom: 3px solid var(---whiteColor);
     height: max-content;
     color: var(---blackColor);
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 70px;
 }
 
 
 .drImage
 {
     width:max-content;
-    height: max-content;
+    height: 100%;
     text-align: center;
 
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
     justify-content:center;
     align-items: center;
     background:var(---secondaryColor);
@@ -208,9 +208,15 @@ border-bottom: 3px solid var(---whiteColor);
     0% {
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
+    25% {
+        border-radius: 68% 32% 30% 70% / 57% 38% 62% 43%;
+      }
     50% {
       border-radius: 68% 32% 30% 70% / 57% 38% 62% 43%;
     }
+    75% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      }
     100% {
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }

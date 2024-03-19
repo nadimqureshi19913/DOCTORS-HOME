@@ -1,0 +1,784 @@
+
+:root
+{
+    ---primaryColor : #276a7b;
+    ---secondaryColor: #007569;
+    ---whiteColor :#fff;
+    ---blackColor :#000;
+    ---textColor:rgb(123, 119, 119);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: all .5s ease;
+    user-select: none;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: var(---whiteColor);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+header
+{
+    width: 100%;
+    height: max-content;
+   background: var(---secondaryColor);
+   position: fixed;
+   top:0;
+   left: 0;
+   padding: .8rem 0;
+   z-index: 1000;
+}
+
+.navbar
+{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    color: var(---whiteColor);
+    flex-wrap: wrap;
+}
+
+.togglebtn
+{
+/* background: red; */
+display: none;
+}
+
+.togglebtn i
+{
+    font-size: 35px;
+}
+
+/* ---------navlogo------------- */
+.navlogo
+{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navlogo a{
+    list-style: none;
+    text-decoration: none;
+    color: var(---whiteColor);
+}
+.navlogo span
+{
+    margin-left: 3px;
+}
+
+
+
+
+
+/* -------inputSection---------------------- */
+.navMenu
+{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:30px;
+flex-wrap: wrap;
+position: relative;
+}
+
+
+/*---------------- .input ----------------------*/
+.navMenu .input
+{
+    width: 350px;
+    padding: .8rem .3rem;
+    border-radius: 10px;
+    background: var(---whiteColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ 
+.navMenu .input i
+{
+    color: var(---textColor);
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navMenu .input input
+{
+    background: transparent;
+    outline: none;
+    width: 80%;
+    border: none;
+    font-size: 18px;
+}
+
+/* ---------li and a ---------------------- */
+.navMenu li
+{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.navMenu li a
+{
+    text-decoration: none;
+    font-size: 18px;
+     font-weight: 600;
+     color: var(---whiteColor);
+    padding-bottom: 10px;
+}
+
+.navMenu li a:hover
+{
+border-bottom: 3px solid var(---whiteColor);
+
+}
+
+
+.navMenu .btn button
+{
+    padding: .5rem 2rem;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: rgb(22, 110, 94);;
+    cursor: pointer;
+}
+
+
+.navMenu .btn button:hover
+{
+    background: rgb(53, 199, 53);
+    color: #fff;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+.main
+{
+    width: 100%;
+    height:70vh;
+    position: relative;
+    padding: 6rem 0rem;
+    /* background: blue; */
+    overflow: hidden;
+    margin-top: 30px;
+
+}
+
+/* ----------------------------CIRCLES----------------------------- */
+.circle
+{
+    height: 600px;
+    width: 600px;
+    background: rgb(151, 242, 230);
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 5px 5px 20px rgba(111,211,222,0.9);
+}
+
+.circle:nth-child(1)
+{
+    left:-150px;
+    top: -400px;
+}
+
+.circle:nth-child(2)
+{
+    right:-140px;
+    top: -200px;
+}
+
+.circle:nth-child(3)
+{
+    bottom:-500px;
+    right: 600px;
+}
+
+/* --------------------------paymentMode----------------------------- */
+
+.paymentMode
+{
+    width: 60%;
+    height: max-content;
+    margin: auto;
+    z-index:99;
+}
+
+.paymentMode .title
+{
+    width: 100%;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(---primaryColor);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 1rem 1rem;
+
+}
+
+.paymentMode .title i
+{
+    font-size: 40px;
+}
+
+.paymentCard
+{
+    width: 100%;
+    text-align: justify;
+    align-items: start;
+    padding: .5rem 1rem;
+    height:100%;
+}
+
+.debitcreditCard
+{
+    width: 100%;
+    padding-bottom:1rem;
+    border-bottom: 2px solid var(---primaryColor);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+    
+   
+}
+.debitcreditCard input
+{
+    margin-right: 10px;
+} 
+
+.CardDetails
+{
+    width: 100%;
+    height: max-content;
+    background: none;
+    display: grid;
+    grid-template-columns:repeat(2,3fr);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+}
+
+.inputbox
+{
+    width:300px;
+    /* background: blue; */
+    border-radius: 10px;
+    position: relative;
+}
+
+.inputbox input:focus,
+.inputbox input:valid
+{
+border-bottom:2px solid var(---primaryColor);
+}
+
+.inputbox input
+{
+    width: 100%;
+    padding: 1rem .4rem;
+    background: none;
+    border-radius: 10px;
+    /* z-index: -1; */
+    /* background: white; */
+    color: black;
+    border:3px solid var(---primaryColor);
+    outline: none;
+    transition: .5s ease;
+    font: 18px;
+    font-weight: 500;
+    color: var(---blackColor);
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label
+{
+top:-30px;
+color:var(---primaryColor)
+}
+
+.inputbox label
+{
+    position: absolute;
+    left: 5px;
+    z-index:1;
+    background: var(---whiteColor);
+    color: var(---blackColor);
+    /* border: 2px solid black; */
+    padding: .3rem;
+    z-index: 999;
+    top:50%;
+    font-size: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s ease;
+    
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label
+{
+top:-5%;
+left:10%;
+color:var(---primaryColor)
+}
+
+
+.CardDetails .btn button
+{
+    padding: .5rem 1.2rem;
+    border: 3px solid var(---primaryColor);
+    border-radius: 10px;
+    background:transparent;
+    color: var(---primaryColor);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.CardDetails .btn button:hover
+{
+    background: var(---primaryColor);
+    color: var(---whiteColor);
+}
+
+
+
+ 
+
+.PaypalCard
+{
+    width: 100%;
+    padding-bottom:1rem;
+    border-bottom: 2px solid var(---primaryColor);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1rem;
+} 
+
+.PaypalCard input
+{
+    margin-right: 10px;
+}
+
+.PaypalCard i
+{
+    font-size: 30px;
+    color: blue;
+}
+
+.PrepaymentCard
+{
+    width: 100%;
+    padding-bottom:1rem;
+    border-bottom: 2px solid var(---primaryColor);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding-top: 1rem;
+} 
+
+
+
+
+.debitcreditCard img
+{
+    background-color: blue;
+}
+
+/* -------------------------------- */
+
+.CardDetails
+{
+    width: 100%;
+    /* height: 300px;
+    background: red; */
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+.footer
+{
+    width: 100%;
+    background:var(---secondaryColor) ;
+    padding-top: 1rem;
+    color: var(---whiteColor);
+    margin-bottom: 0px;
+}
+
+.footer .contactVisit
+{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 0rem;
+}
+
+.footer .contactVisit .footerlogo
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.footer .contactVisit .footerlogo span
+{
+    margin-left: 10px;
+}
+
+.footer .contactVisit .pera
+{
+    width: 400px;
+    line-height:2rem;
+}
+
+.footer .copyright
+{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: var(---primaryColor);
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.footer .copyright h1
+{
+    font-size: 15px;
+}
+
+.footer .copyright .terms
+{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.footer .copyright .terms h2
+{
+    font-size: 18px;
+}
+
+.SocialIcons i
+{
+    color: var(---whiteColor);
+    font-size: 1.3rem;
+}
+
+.ContactDetails
+{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.number, .gmail
+{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+
+
+.number img , .gmail img
+{
+    border-radius: 5px;
+    background: rgb(89, 177, 212);
+    padding: .3rem .5rem;
+}
+
+
+
+
+.copyright h1
+{
+    display: flex;
+    align-items: center;
+}
+
+.copyright h1 i
+{
+    font-size: 1.3rem;
+}
+
+.navMenu .active
+{
+    top: 100px;
+}
+
+
+.removeBtn
+{
+    padding:.5rem .7rem;
+    color: white;
+    background:var(---secondaryColor);
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:1050px) {
+    .navbar{
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    .navMenu
+    {
+        position:absolute;
+        top:-900%;
+        width: 70%;
+        padding: .9rem .7rem;
+        /* background: rgb(22, 110, 94); */
+        justify-content: center;
+        flex-direction: column;
+        border:2px solid var(---secondaryColor);
+        background: rgb(50, 181, 163);
+        border-radius: 10px;
+        left: 15%;
+    }
+    
+    
+    .navMenu li
+    {
+        background:var(---secondaryColor);
+        padding: 0.6rem 0;
+        border-radius: 10px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .navMenu .input
+    {
+        width: 70%;
+    }
+    
+    .navMenu li:hover
+    {
+        background:var(---blackColor);
+        color: var(---whiteColor);
+    }
+    
+    .navMenu li a:hover
+    {
+        border-bottom: none;
+    }
+    
+    .togglebtn
+    {
+        display: block;
+    }
+    
+    .navMenu .btn
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .navMenu .btn button
+    {
+        width: 100%;
+    }
+    
+    /* --------------------------- */
+    
+
+
+
+
+      
+/* ------------------------ */
+.main
+{
+    width: 100%;
+    height: max-content;
+}
+
+.circle
+{
+    width: 200px;
+    height:200px;
+
+}
+
+.circle:nth-child(1)
+{
+    left: -40px;
+    top: -30px;
+}
+
+.circle:nth-child(2)
+{
+    right:-90px;
+    top: 170px;
+}
+.circle:nth-child(3)
+{
+    bottom:-100px;
+    right: 100px;
+}
+
+/* -------------------- */
+.paymentMode
+{
+    width: 100%;
+    height: max-content;
+}
+.paymentMode .title
+{
+    width: 100%;
+}
+
+.paymentCard
+{
+    padding: .4rem;
+}
+
+.debitcreditCard
+{
+    width: 90%;
+    margin: auto;
+}
+.CardDetails
+{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-top: 30px;
+}
+
+.inputbox
+{
+    width: 70%;
+    margin: auto;
+}
+.CardDetails .btn
+{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.CardDetails .btn button
+{
+    width: 70%;
+    margin: auto;
+}
+
+.CardDetails .btn a
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+.PaypalCard
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.PrepaymentCard
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* ----------------------Footer start--------------------------- */
+.footer
+{
+ width: 100%;
+}
+
+.footer .contactVisit
+{
+ flex-direction: column;
+ width: 100%;
+}
+
+
+.footer .contactVisit .footerlogo
+{
+ font-size: 2rem;
+}
+
+.footer .contactVisit .pera
+{
+ width: 90%;
+ margin: auto;
+ text-align: center;
+}
+
+.footer .copyright .terms
+{
+ width: 80%;
+}
+
+.SocialIcons
+{
+ width: 90%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.copyright
+{
+ width: 100%;
+ font-size: 1rem;
+ display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+.footer .copyright .terms h2
+{
+ font-size: .8rem;
+}
+
+.removeBtn
+{
+display: block;
+}
+
+}
+
+
+
+
